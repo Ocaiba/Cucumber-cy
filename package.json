@@ -1,0 +1,22 @@
+{
+  "name": "cucumber-cy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ocaiba",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^13.16.1",
+    "typescript": "^5.7.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "e2e": {
+      "stepDefinitions": "cypress/e2e/steps-definitions/**/*.{js,ts}"
+    }
+  }
+}
