@@ -11,6 +11,7 @@ async function setupNodeEvents(on: Cypress.PluginEvents, config: Cypress.PluginC
 
 export default defineConfig({
   e2e: {
+    baseUrl: "https://todomvc.com/examples/react/dist/",
     // specPattern: "**/*.feature",
     specPattern: "cypress/e2e/features/**/*.feature",
     setupNodeEvents,

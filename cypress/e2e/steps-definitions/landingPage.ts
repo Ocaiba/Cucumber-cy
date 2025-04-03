@@ -2,7 +2,7 @@ import {Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
 // import todoPage from "../page-objects/todo.page";
 
 Given(/^I open landing page$/, function () {
-    cy.visit('https://todomvc.com/examples/react/dist/');
+    cy.visit('/');
 });
 
 Then(/^I see landing page correctly$/, function () {
